@@ -15,5 +15,3 @@ public class Product {
         System.out.println("Price: " + price);
     }
 }
-    
-
