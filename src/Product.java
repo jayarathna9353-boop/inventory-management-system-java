@@ -14,10 +14,14 @@ public class Product {
     }
 
     void sellStock(int amount) {
-    quantity -= amount;
+    if(amount > quantity) {
+        System.out.println("Not enough stock available");
+    } else {
+        quantity -= amount;
 
-    if(quantity < 20) {
-        System.out.println("Low Stock Alert for " + name);
+        if(quantity < 20) {
+            System.out.println("Low Stock Alert for " + name);
+        }
     }
 }
 
