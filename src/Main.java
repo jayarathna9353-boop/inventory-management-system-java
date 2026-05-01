@@ -41,11 +41,13 @@ public class Main {
                 else if(productChoice == 3) selected = p3;
 
                 if(selected != null) {
-                    if(choice == 2)
-                        selected.addStock(10);
-                    else
-                        selected.sellStock(5);
+                    System.out.print("Enter amount: ");
+int amount = sc.nextInt();
 
+if(choice == 2)
+    selected.addStock(amount);
+else
+    selected.sellStock(amount);
                     selected.display();
                 }
             }
