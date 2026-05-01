@@ -17,6 +17,12 @@ public class Product {
         quantity -= amount;
     }
 
+    void checkLowStock() {
+        if(quantity < 20) {
+            System.out.println("Low Stock Alert for " + name);
+        }
+    }
+
     void display() {
         System.out.println("Product: " + name);
         System.out.println("Quantity: " + quantity);
