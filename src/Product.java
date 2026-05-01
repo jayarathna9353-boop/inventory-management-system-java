@@ -9,6 +9,14 @@ public class Product {
         this.price = price;
     }
 
+    void addStock(int amount) {
+        quantity += amount;
+    }
+
+    void sellStock(int amount) {
+        quantity -= amount;
+    }
+
     void display() {
         System.out.println("Product: " + name);
         System.out.println("Quantity: " + quantity);

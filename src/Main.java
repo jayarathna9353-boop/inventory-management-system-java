@@ -1,17 +1,18 @@
 public class Main {
     public static void main(String[] args) {
         Product p1 = new Product("Rice Seeds", 50, 2500);
-        Product p2 = new Product("Fertilizer", 20, 1800);
-        Product p3 = new Product("Wheat Seeds", 30, 2000);
 
-        System.out.println("Farmer Inventory Management System");
-
+        System.out.println("Before Update");
         p1.display();
-        System.out.println();
 
-        p2.display();
-        System.out.println();
+        p1.addStock(20);
 
-        p3.display();
+        System.out.println("\nAfter Adding Stock");
+        p1.display();
+
+        p1.sellStock(10);
+
+        System.out.println("\nAfter Selling Stock");
+        p1.display();
     }
 }
